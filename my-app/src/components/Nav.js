@@ -1,7 +1,8 @@
+import logo from '../images/W.png'
 export default function Nav() {
   return (
     <div className="nav">
-      {/* <img className="nav-logo" src='../images/W.png' alt="logo" /> */}
+      <img className="nav-logo" src={logo} alt="logo" />
       <h1>Shopka</h1>
       <div className="nav-link">Sell on Shopka</div>
       <div className="nav-link">Register</div>

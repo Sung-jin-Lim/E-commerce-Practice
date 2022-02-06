@@ -3,7 +3,6 @@ import Nav from './components/Nav.js';
 import categories from './components/categories.js';
 import Category from './components/Category.js';
 
-
 function App() {
   // take in the object from categories file and convert each object into a component inside Categories
   const Categories = categories.map(category => {

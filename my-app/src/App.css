@@ -18,17 +18,25 @@ img {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 1rem;
+}
+.nav-logo {
+  width: 10rem;
 }
 
 input {
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 20%;
-  height: 2rem;
+  height: 2.5rem;
   background-color: #ededf0;
   outline: none;
   border: none;
   padding: 0 1rem;
   font-size: 1rem;
+  background-image: url("./images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem;
+  padding-left: 2.5rem;
 }
 
 /* the small icons and text underneath */
@@ -36,23 +44,22 @@ input {
 .categories {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
   justify-content: center;
 }
 
 .category {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #ebf2ff;
   color: #2979ff;
   text-align: center;
   padding: 0 1rem;
   border-radius: 0.8rem;
-  padding-top: 1rem;
+  padding-top: 0.7rem;
+  height: min-content;
 }
 .category-name {
-  font-size: 14px;
+  font-size: 0.7rem;
   width: max-content;
 }

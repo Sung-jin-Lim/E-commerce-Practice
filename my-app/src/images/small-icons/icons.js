@@ -1,0 +1,1 @@
+export { default as babysitter } from './babysitter.png';
