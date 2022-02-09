@@ -33,7 +33,7 @@ img {
   min-width: max-content;
 } */
 .nav-logo {
-  width: 10rem;
+  width: 7rem;
 }
 
 input {
@@ -112,6 +112,7 @@ button {
 }
 .category-name {
   font-size: 0.6rem;
+  min-width: max-content;
 }
 
 /* span blue */
@@ -124,4 +125,23 @@ span {
   min-width: 80%;
   display: flex;
   flex-direction: row;
+}
+
+/* Left Container */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Departments {
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* lists */
+
+li {
+  position: relative;
+  left: 1rem;
 }

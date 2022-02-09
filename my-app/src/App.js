@@ -9,20 +9,15 @@ function App() {
   const [sqaures, setSquares] = React.useState(categories);
 
   function click(id) {
+    // takes in categories.js array and for each object in the array...
     setSquares((prev) => {
       return (prev.map((object) => {
-        if (object.id === id) {
-          return { ...object, on: !object.on };
-        } else {
-          return { ...object, on: false };
-        }
+        // if the object's id matches the id of the square that was clicked...
 
-        // object.id === id ? { ...object, on: !object.on } : object
+        return object.id === id ? { ...object, on: !object.on } : { ...object, on: false };
+
       }));
     });
-    console.log(id);
-
-
 
   }
 

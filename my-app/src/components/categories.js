@@ -77,6 +77,12 @@ const categories =
       "image": Care,
       'on': false
     },
+    {
+      "id": 11,
+      "name": "Vintage",
+      "image": Care,
+      'on': false
+    },
 
   ]
 
