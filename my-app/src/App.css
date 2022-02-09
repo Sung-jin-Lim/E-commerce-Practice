@@ -125,6 +125,7 @@ span {
   display: flex;
   flex-direction: row;
   padding: 0 15rem;
+  margin-top: 1rem;
 }
 
 /* Left Container */

@@ -1,5 +1,6 @@
 import hamburger from '../images/Vector.png'
 import menuItems from './menu-items/menuItems.js';
+import MenuItems from './MenuItems.js';
 
 export default function LeftContainer() {
 
@@ -14,8 +15,8 @@ export default function LeftContainer() {
         <img src={hamburger} alt='hamburger' />
         Departments</button>
       <ul className="menus">
-        {menuItems.map(menu => {
-          return <li key={menu.id}>{menu.name}</li>
+        {menuItems.map((menu, index) => {
+          return <MenuItems key={index} name={menu.name} extra={menu.submenu} />
         })}
       </ul>
     </div>

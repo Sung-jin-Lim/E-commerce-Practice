@@ -1,25 +1,17 @@
 const menuItems = [
   {
-    id: 1,
     name: 'All Categories',
-
-
-    extra: [
+    submenu: [
       {
-        id: 2,
         name: 'Fashion',
-        // image: ,
-        extra: [
+        submenu: [
           {
-            id: 3,
             name: 'Clothing',
           },
           {
-            id: 4,
             name: 'Shoes',
           },
           {
-            id: 5,
             name: 'Accessories',
           },
 
@@ -27,26 +19,23 @@ const menuItems = [
 
       },
       {
-        id: 3,
         name: 'Food',
         // image: ,
       },
       {
-        id: 4,
         name: 'Travel',
 
         // image: ,
       },
       {
-        id: 5,
         name: 'Beauty',
         // image: ,
       },
       {
-        id: 6,
         name: 'Fitness',
         // image: ,
-      },]
+      },
+    ]
 
 
   },
