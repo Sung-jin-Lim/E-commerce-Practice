@@ -1,5 +1,6 @@
-import LeftCategory from './LeftCategory.js'
-import list from './leftcategorydata.js';
+import hamburger from '../images/Vector.png'
+import menuItems from './menu-items/menuItems.js';
+
 export default function LeftContainer() {
 
   // const extra = list.map(extra => {
@@ -9,10 +10,14 @@ export default function LeftContainer() {
 
 
     <div className="left-container">
-      <button className="Departments">Departments</button>
-      {list.map(category => {
-        return <LeftCategory key={category.id} id={category.id} name={category.name} extra={category.extra} />
-      })}
+      <button className="Departments">
+        <img src={hamburger} alt='hamburger' />
+        Departments</button>
+      <ul className="menus">
+        {menuItems.map(menu => {
+          return <li key={menu.id}>{menu.name}</li>
+        })}
+      </ul>
     </div>
   )
 }

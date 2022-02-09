@@ -1,8 +1,7 @@
-const categories = [
+const menuItems = [
   {
     id: 1,
     name: 'All Categories',
-    // image: ,
 
 
     extra: [
@@ -56,5 +55,4 @@ const categories = [
 
 
 ]
-
-export default categories
+export default menuItems;
