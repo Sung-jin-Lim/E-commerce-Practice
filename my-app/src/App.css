@@ -52,7 +52,7 @@ input {
   padding-left: 2.5rem;
 }
 
-button {
+.button {
   background-color: #ffffff;
   border: 1px solid #2979ff;
   color: rgb(41, 121, 255);
@@ -153,4 +153,21 @@ span {
 li {
   position: relative;
   left: 1rem;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+ul {
+  margin: 0.5rem 0;
+}
+
+/* dropdown */
+
+li > button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  outline: none;
+  width: max-content;
 }

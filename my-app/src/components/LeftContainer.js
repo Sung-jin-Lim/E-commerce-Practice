@@ -11,7 +11,7 @@ export default function LeftContainer() {
 
 
     <div className="left-container">
-      <button className="Departments">
+      <button className="Departments button">
         <img src={hamburger} alt='hamburger' />
         Departments</button>
       <ul className="menus">

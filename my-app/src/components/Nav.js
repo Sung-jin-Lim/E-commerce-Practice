@@ -8,8 +8,8 @@ export default function Nav() {
       <div className="nav-link">Register</div>
       <input />
       <div className="nav-link"><span>Consumer Electronics</span></div>
-      <button className="signin nav-link">Sign In</button>
-      <button className="mycart nav-link">My Cart</button>
+      <button className="signin nav-link button">Sign In</button>
+      <button className="mycart nav-link button">My Cart</button>
       <img src={profile} alt="profile" className='profile' />
 
 
