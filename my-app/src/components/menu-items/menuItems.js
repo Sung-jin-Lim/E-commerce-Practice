@@ -1,6 +1,7 @@
 const menuItems = [
   {
     name: 'All Categories',
+    desc: 'Ecommerce Patterns',
     submenu: [
       {
         name: 'Fashion',
@@ -21,6 +22,18 @@ const menuItems = [
       {
         name: 'Food',
         // image: ,
+        desc: 'YEs',
+        submenu: [
+          {
+            name: 'Beverages',
+          },
+          {
+            name: 'Food',
+          },
+          {
+            name: 'Snacks',
+          },
+        ]
       },
       {
         name: 'Travel',

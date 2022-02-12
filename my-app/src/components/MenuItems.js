@@ -7,12 +7,10 @@ export default function MenuItems(props) {
 
   // prevents the click event from 
   // bubbling up to the parent
-  function changeState(
-    e
-  ) {
-    e.preventDefault();
-    toggleShow(!show);
-  }
+  // function changeState(e) {
+  //   e.preventDefault();
+  //   toggleShow(!show);
+  // }
 
 
 
@@ -20,13 +18,17 @@ export default function MenuItems(props) {
     <li >
       {props.extra ? (
         <>
-          <button onClick={changeState}>{props.name}</button>
+          <button onClick={() => toggleShow((prev) => !prev)}>{props.name}
+            {props.desc && <p className="desc" >{props.desc}</p>}</button>
+
+
           {/* passes in first submenu */}
-          {show && <Dropdown extra={props.extra} />}
+          {show && <Dropdown extra={props.extra} dropdown={show} />}
         </>
       ) : (
         props.name
-      )}
+      )
+      }
     </ li >
   )
 

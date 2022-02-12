@@ -169,5 +169,16 @@ li > button {
   cursor: pointer;
   font-size: 0.9rem;
   outline: none;
-  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/* description */
+p {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.dropdown {
+  display: block;
 }

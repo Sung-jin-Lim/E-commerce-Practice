@@ -16,7 +16,7 @@ export default function LeftContainer() {
         Departments</button>
       <ul className="menus">
         {menuItems.map((menu, index) => {
-          return <MenuItems key={index} name={menu.name} extra={menu.submenu} />
+          return <MenuItems key={index} name={menu.name} desc={menu.desc} extra={menu.submenu} />
         })}
       </ul>
     </div>
