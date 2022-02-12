@@ -24,9 +24,10 @@ export default function MenuItems(props) {
 
           {/* passes in first submenu */}
           {show && <Dropdown extra={props.extra} dropdown={show} />}
+
         </>
       ) : (
-        props.name
+        <button>{props.name}{props.desc && <p className="desc" >{props.desc}</p>}</button>
       )
       }
     </ li >

@@ -1,5 +1,6 @@
 * {
   margin: 0;
+
   padding: 0;
 }
 body {
@@ -173,6 +174,17 @@ li > button {
   flex-direction: column;
 }
 
+li::before {
+  content: url("./images/off.png");
+  font-size: 1rem;
+  display: inline-block;
+  height: 0.2rem;
+  position: absolute;
+  top: 0rem;
+  left: -1rem;
+  transition: all 0.3s ease-in-out;
+}
+
 /* description */
 p {
   font-size: 0.7rem;
@@ -181,4 +193,10 @@ p {
 
 .dropdown {
   display: block;
+}
+
+.arrow {
+  position: relative;
+  right: 1.5rem;
+  bottom: 2rem;
 }

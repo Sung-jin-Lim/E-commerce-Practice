@@ -8,6 +8,13 @@ const menuItems = [
         submenu: [
           {
             name: 'Clothing',
+            submenu: [
+              {
+                name: 'Dresses',
+              },
+              {
+                name: 'Tops',
+              },]
           },
           {
             name: 'Shoes',
@@ -22,7 +29,6 @@ const menuItems = [
       {
         name: 'Food',
         // image: ,
-        desc: 'YEs',
         submenu: [
           {
             name: 'Beverages',
@@ -37,11 +43,22 @@ const menuItems = [
       },
       {
         name: 'Travel',
-
+        submenu: [
+          {
+            name: 'Hotels',
+          },
+          {
+            name: 'Flights',
+          },
+          {
+            name: 'Cruises',
+          },
+        ]
         // image: ,
       },
       {
         name: 'Beauty',
+        desc: 'Cream and Makeup'
         // image: ,
       },
       {
