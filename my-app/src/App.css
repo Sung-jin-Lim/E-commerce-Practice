@@ -151,7 +151,7 @@ span {
 
 /* lists */
 
-li {
+.menuList {
   position: relative;
   left: 1rem;
   list-style: none;
@@ -173,16 +173,28 @@ li > button {
   display: flex;
   flex-direction: column;
 }
-
-li::before {
+/* when list element's state is true */
+.liOff:before {
   content: url("./images/off.png");
+  font-size: 1rem;
+  display: inline-block;
+  height: 0.1rem;
+  position: absolute;
+  top: 0rem;
+  left: -1rem;
+}
+/* when its not */
+.liOn::before {
+  content: url("./images/off.png");
+  filter: brightness(0) saturate(100%) invert(41%) sepia(18%) saturate(3222%) hue-rotate(182deg)
+    brightness(92%) contrast(94%);
   font-size: 1rem;
   display: inline-block;
   height: 0.2rem;
   position: absolute;
-  top: 0rem;
+  top: 0.5rem;
   left: -1rem;
-  transition: all 0.3s ease-in-out;
+  transform: rotate(90deg);
 }
 
 /* description */

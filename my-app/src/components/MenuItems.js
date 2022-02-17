@@ -5,30 +5,31 @@ export default function MenuItems(props) {
   // state for toggle
   const [show, toggleShow] = useState(false);
 
-  // prevents the click event from 
-  // bubbling up to the parent
-  // function changeState(e) {
-  //   e.preventDefault();
-  //   toggleShow(!show);
-  // }
 
-
+  // const [overflow, toggleOverflow] = useState(false);
 
   return (
-    <li >
+
+    <li className={show ? 'menuList liOn' : 'menuList liOff'} >
+      {/* if props.extra.length > 3 console.log(bigger than 3) */}
       {props.extra ? (
+
+
         <>
-          <button onClick={() => toggleShow((prev) => !prev)}>{props.name}
-            {props.desc && <p className="desc" >{props.desc}</p>}</button>
+          {/* {props.extra.length > 3 ? ((console.log('bigger than 3'))) : (console.log('nope'))} */}
+          <button onClick={() => toggleShow((prev) => !prev)}>
+            {props.name}
+            {props.desc && <p className="desc" >{props.desc}</p>}
+          </button>
+
 
 
           {/* passes in first submenu */}
           {show && <Dropdown extra={props.extra} dropdown={show} />}
 
         </>
-      ) : (
-        <button>{props.name}{props.desc && <p className="desc" >{props.desc}</p>}</button>
-      )
+      ) :
+        (<button>{props.name}{props.desc && <p className="desc" >{props.desc}</p>}</button>)
       }
     </ li >
   )

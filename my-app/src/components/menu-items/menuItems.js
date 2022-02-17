@@ -65,6 +65,29 @@ const menuItems = [
         name: 'Fitness',
         // image: ,
       },
+      {
+        name: 'Electronics',
+        submenu: [
+          {
+            name: 'Computers',
+          },
+          {
+            name: 'Smartphones',
+          },
+          {
+
+            name: 'Tablets',
+          },
+          {
+            name: 'TVs',
+          },
+          {
+            name: 'Audio',
+          },
+
+
+        ]
+      }
     ]
 
 
